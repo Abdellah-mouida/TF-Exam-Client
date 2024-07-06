@@ -1,0 +1,120 @@
+.create-exam-container {
+  width: 80%;
+  margin: 0 auto;
+}
+/* .create-exam {
+  height: calc(100vh - 4rem);
+  overflow: auto;
+}
+.create-exam::-webkit-scrollbar {
+  display: none;
+} */
+.create-exam-container .form-controle {
+  margin: 1rem 0;
+}
+.radio-controle {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+.create-exam-container label {
+  font-weight: 500;
+}
+.radio-controle input {
+  width: 20px;
+
+  height: 20px;
+}
+.create-exam .radio-controle:nth-child(4) input {
+  accent-color: #ff6b6b;
+}
+.create-exam .radio-controle:nth-child(3) input {
+  accent-color: #ffb500;
+}
+.create-exam .radio-controle:nth-child(2) input {
+  accent-color: #00ffa1;
+}
+.add-q button,
+.create-exam .f-c button,
+.pass-exam .f-c button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--Prcl);
+  color: var(--Btn);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.create-exam .f-c button,
+.pass-exam .f-c button {
+  width: 50%;
+  font-size: 1.3rem;
+  margin: 1.3rem;
+  border: solid 1.5px transparent;
+  transition: 0.5s;
+  padding: 1rem;
+}
+.create-exam .f-c button:hover,
+.pass-exam .f-c button:hover {
+  border: solid 1.5px var(--Dark);
+}
+.add-q {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 2rem;
+}
+.qestion {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.qestion button {
+  padding: 15px 25px;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  margin: 5px;
+}
+.false-btn {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.true-btn {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.false {
+  box-shadow: 0 0 10px 1px #ff2020;
+  background-color: #ff2020;
+  color: #fff;
+}
+.true {
+  box-shadow: 0 0 10px 1px #00ffa1;
+  background-color: #00ffa1;
+  color: #000;
+}
+.qestion .form-controle {
+  width: 70%;
+}
+.qestion button i {
+  padding-right: 10px;
+  font-size: 1.2rem;
+}
+.TF-btn {
+  display: flex;
+}
+.qestions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

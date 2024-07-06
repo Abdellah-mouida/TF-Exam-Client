@@ -1,0 +1,60 @@
+.leaderboard section:first-child {
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: linear-gradient(45deg, var(--Prcl) 50%, #111 50%);
+}
+.leaderboard section {
+  padding: 2rem 1rem;
+}
+.leaderboard .g-title {
+  font-size: 3.5rem;
+  color: #111;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.leaderboard .g-title div {
+  width: 50%;
+}
+.leaderboard .g-title b {
+  font-size: 4rem;
+  color: var(--Prcl);
+}
+.leaderboard p {
+  text-align: center;
+  color: var(--Prcl);
+  font-size: 20px;
+}
+
+.leaderboard table {
+  table-layout: auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.leaderboard table th,
+.leaderboard table td {
+  border: solid 1px #111;
+
+  padding: 10px;
+}
+.leaderboard table th {
+  background-color: #111;
+  color: var(--Prcl);
+}
+.leaderboard table td {
+  text-align: center;
+}
+.leaderboard table i {
+  font-size: 1.2rem;
+  position: absolute;
+  left: 30px;
+  color: #c0c0c0;
+}
+.leaderboard table tr:first-child i {
+  color: gold;
+}
+.leaderboard table tr:nth-child(3) i {
+  color: #792f2f;
+}

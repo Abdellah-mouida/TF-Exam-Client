@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  color: var(--Black);
+  background-color: var(--White);
+}
+.g-title {
+  text-align: center;
+  font-size: 10vmin;
+}
+.f-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.f-end {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.empty-data {
+  font-size: 3vmin;
+  text-align: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--TR-Black);
+}
+.empty-data i {
+  font-size: 7rem;
+}
+/* Test */
+.pdf {
+  width: 210mm;
+  height: 297mm;
+  border: 1px solid #000;
+
+  position: absolute;
+  left: -99999px;
+}

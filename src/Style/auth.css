@@ -1,0 +1,124 @@
+.sing {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, var(--Light) 40%, var(--Prcl) 60%);
+}
+.auth-container {
+  width: 80%;
+  background-color: var(--White);
+  display: flex;
+  box-shadow: 0 0 2px 0.1px var(--TR-Black);
+  border-radius: 30px;
+  padding: 1rem;
+  overflow: hidden;
+}
+.auth-container form,
+.auth-img {
+  flex: 1;
+}
+
+.auth-img {
+  background-image: url(../Images/college\ entrance\ exam-amico.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.login-img {
+  background-image: url(../Images/Exams-rafiki.svg);
+}
+.auth-container h2 {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 2rem;
+}
+.auth-container p {
+  text-align: center;
+  color: var(--TR-Black);
+}
+.form-controle {
+  width: 80%;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-controle input,
+.form-controle select {
+  font-size: 1.05rem;
+  border: none;
+  outline: none;
+  border-bottom: 1.5px solid var(--TR-Black);
+  padding: 3px 7px;
+  background-color: transparent;
+  color: var(--Black);
+}
+.form-controle button {
+  width: 60%;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: var(--Prcl);
+  color: var(--Btn);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin: 8px auto;
+  font-size: 1.05rem;
+}
+.auth-container span {
+  text-align: center;
+  position: relative;
+  color: var(--TR-Black);
+  padding: 2px 10px;
+  z-index: 4;
+}
+.auth-container span::before {
+  content: "";
+  background-color: var(--TR-Black);
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  z-index: -2;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.auth-container span::after {
+  content: "";
+  background-color: var(--White);
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+.google-sing img {
+  width: 30px;
+}
+.google-sing {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  margin: 10px 0;
+}
+.form-controle p {
+  color: var(--Black);
+  text-align: center;
+}
+.form-controle p a {
+  color: var(--Prcl);
+  font-weight: 500;
+  padding: 0 5px;
+}
+.forget-psw .auth-container {
+  width: 50%;
+}
+.forget-psw .note-code {
+  padding: 2rem;
+}

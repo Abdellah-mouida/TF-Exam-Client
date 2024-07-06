@@ -1,0 +1,26 @@
+.about p {
+  line-height: 3;
+  text-align: justify;
+}
+.about .welcome {
+  text-align: center;
+  color: var(--TR-Black);
+}
+.about-content {
+  padding: 3rem 6rem;
+}
+.about-content h3 {
+  margin: 1rem;
+  font-size: 1.2rem;
+  color: var(--Dark);
+}
+.about li {
+  margin: 1rem 0;
+  opacity: 0.9;
+}
+.about-content p:last-child {
+  text-align: center;
+}
+.about span {
+  color: var(--Prcl);
+}

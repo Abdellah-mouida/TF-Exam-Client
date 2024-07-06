@@ -1,0 +1,33 @@
+.popup {
+  width: 350px;
+  border-radius: 15px;
+  position: absolute;
+  z-index: 900000;
+  top: 20px;
+  transition: 0.5s;
+  padding: 15px;
+  color: #fff;
+}
+.popup header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.popup header i {
+  font-size: 1.2rem;
+}
+.popup header {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.popup p {
+  font-size: 0.9rem;
+}
+.popup .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.2;
+  cursor: pointer;
+  padding: 10px;
+}

@@ -1,0 +1,95 @@
+/* ----------   Menu   ---------- */
+
+menu {
+  width: 350px;
+  overflow: hidden;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+menu header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 1.6rem;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  justify-content: center;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.menu-img {
+  width: 15vmin;
+  height: 15vmin;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 400px;
+  overflow: auto;
+  flex: 1;
+  padding-right: 10px;
+}
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 7px;
+  margin: 2px;
+  padding: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--Prcl);
+  border-radius: 20px;
+}
+.navigation .Link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--Dark);
+  font-size: 1.2rem;
+  transition: 0.5s;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+.navigation .Link i {
+  font-size: 1.4rem;
+}
+menu button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--Prcl);
+  color: var(--Btn);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+menu button:hover i {
+  transform: translateX(10px);
+}
+menu button i {
+  font-size: 1.4rem;
+  transition: 0.5s;
+  padding-right: 10px;
+}
+.Link:hover,
+.Link.active {
+  color: var(--Btn);
+  background-color: var(--Prcl);
+}

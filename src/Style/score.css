@@ -1,0 +1,330 @@
+.score-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2rem;
+}
+
+.score-page h2 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.score-page h1 {
+  text-align: center;
+  font-size: 20vmin;
+  background-color: var(--Light);
+  color: var(--Prcl);
+  padding: 1rem;
+  border-radius: 30px;
+}
+.score-page p {
+  background-color: var(--Light);
+  border-radius: 30px;
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 2;
+  width: 80%;
+  color: var(--Dark);
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+.mistakes {
+  padding: 1rem;
+}
+.mistake {
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+.mistake span {
+  text-decoration: line-through;
+  color: #ff0200;
+}
+.mistake i {
+  padding: 0 10px;
+}
+.score-page button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--Prcl);
+  color: var(--Btn);
+  border-radius: 30px;
+  transition: 0.5s;
+  width: 50%;
+  font-size: 1.3rem;
+  margin: 1.3rem;
+  border: solid 1.5px transparent;
+  transition: 0.5s;
+  padding: 1rem;
+}
+
+/* PDF */
+.pdf-score {
+  overflow: hidden;
+  padding: 0 1rem;
+  background-color: var(--White);
+}
+.pdf-score::before {
+  content: "";
+  width: 110%;
+  height: 200px;
+  background-color: #111;
+  position: absolute;
+  top: -110px;
+  left: -25px;
+  z-index: 0;
+  transform: rotate(-10deg);
+}
+.pdf-score header h1 {
+  color: var(--Prcl);
+  font-size: 5rem;
+  z-index: 5;
+  transform: rotate(-10deg);
+  position: relative;
+}
+.pdf-score header p {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  z-index: 5;
+  color: var(--Prcl);
+  font-size: 1rem;
+  opacity: 0.8;
+}
+.pdf-score header {
+  margin-bottom: 2rem;
+  height: 150px;
+}
+.pdf-score main h2 {
+  font-size: 2rem;
+  max-width: 600px;
+  text-align: center;
+  margin: 2rem auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.pdf-exam-info {
+  margin: 0 auto;
+  width: 80%;
+  background-color: var(--Light);
+  padding: 1.3rem;
+  border-radius: 15px;
+}
+.pdf-exam-info table {
+  width: 100%;
+}
+.pdf-exam-info table th {
+  padding: 10px 5px;
+  font-size: 1.1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: start;
+  max-width: 200px;
+  white-space: nowrap;
+}
+.pdf-exam-info table tr th:nth-child(even) {
+  font-weight: normal;
+}
+.pdf-title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+  padding: 2rem 10px;
+  background-color: var(--White);
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--Prcl);
+  justify-content: center;
+}
+.pdf-title::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: var(--Prcl);
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pdf-title span {
+  padding: 0 30px;
+  z-index: 20;
+  height: 10px;
+  position: absolute;
+  width: 40%;
+  background-color: var(--White);
+  top: 50%;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+}
+.pdf-title p {
+  padding: 10px 30px;
+  z-index: 20;
+  position: relative;
+  width: 30%;
+  background-color: #111;
+  border-radius: 30px;
+}
+
+.pdf-note {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--Prcl);
+  background-color: #111;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  z-index: 2;
+  flex-direction: column;
+  /* box-shadow: 0 0 10px 1px var(--Prcl); */
+  /* filter: drop-shadow(10px 10px 10px var(--Prcl)); */
+  border: solid 3px var(--Prcl);
+}
+
+.pdf-note .line {
+  width: 80%;
+  height: 3px;
+  background-color: var(--Prcl);
+}
+.pdf-score .answers table i {
+  font-size: 1.7rem;
+}
+.pdf-stats-container {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  height: 500px;
+}
+.pdf-stats-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  font-size: 20px;
+  gap: 25px;
+  background-color: var(--Light);
+  border: solid 2px var(--Black);
+}
+.pdf-stats-box i {
+  font-size: 3rem;
+}
+.pdf-stats-box:nth-child(2) {
+  background-color: #00ff0033;
+  color: #00bb00;
+  border: solid 2px #00bb00;
+}
+.pdf-stats-box:nth-child(3) {
+  background-color: #ff202033;
+  color: #ee2000;
+  border: solid 2px #ee2000;
+}
+.pdf-stats-box:nth-child(4) {
+  background-color: #ffb20033;
+  color: #f4ab00;
+  border: solid 2px #f4b000;
+}
+/* Review  */
+
+.review-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  transition: 1s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000000c4;
+}
+.review {
+  padding: 1.2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 0px var(--TR-Black);
+  background-color: var(--White);
+  display: flex;
+  position: absolute;
+  transition: 0.5s;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.review h3 {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.review p {
+  font-size: 1rem;
+  color: var(--TR-Black);
+  text-align: center;
+}
+.review input {
+  width: 80%;
+  accent-color: var(--Prcl);
+  outline-color: #ee2000;
+  cursor: pointer;
+}
+
+.review button {
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: var(--Prcl);
+  color: var(--Btn) !important;
+  cursor: pointer;
+}
+.review span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.review i {
+  font-size: 2rem;
+  color: var(--Prcl);
+  padding: 0 10px;
+}
+.range-controle {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.review .f-end {
+  width: 100%;
+}
+.review .fa-xmark {
+  position: absolute;
+  cursor: pointer;
+  padding: 10px;
+  right: 20px;
+  top: 10px;
+}

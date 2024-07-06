@@ -1,0 +1,17 @@
+.loading {
+  position: fixed;
+  width: calc(100vw - 425px);
+  height: calc(100vh - 4rem);
+  top: 2rem;
+  z-index: 800000;
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spener {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}

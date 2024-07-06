@@ -1,0 +1,60 @@
+.profile-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.profile-img {
+  width: 200px;
+  box-shadow: 0 0 10px 1px var(--TR-Black);
+  height: 200px;
+  border-radius: 50%;
+  background-image: url(../Images//unkown.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.profile-page section {
+  position: relative;
+}
+.profile-info h4 {
+  font-size: 6vmin;
+  color: var(--Prcl);
+}
+.profile-info p {
+  color: var(--TR-Black);
+  font-size: 1.1rem;
+}
+.profile-user-stats {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--Light);
+  margin: 1.5rem auto;
+  border-radius: 20px;
+  gap: 50px;
+  box-shadow: 0 0 10px 1px var(--Prcl);
+}
+.profile-box {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  align-items: center;
+  /* background-color: var(--Light); */
+}
+
+.profile-box h3 {
+  font-size: 20px;
+  text-align: center;
+}
+.profile-box span {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--Prcl);
+}
+.profile-history h4 {
+  text-align: center;
+  font-size: 2rem;
+}

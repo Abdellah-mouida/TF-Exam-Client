@@ -1,0 +1,65 @@
+/* .pass-exam {
+  height: calc(100vh - 4rem);
+  overflow: auto;
+}
+.pass-exam::-webkit-scrollbar {
+  display: none;
+} */
+
+.pass-exam .exam-info {
+  justify-content: space-between;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+.pass-exam .qestion {
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  margin: 0 auto;
+  gap: 15px;
+}
+.pass-exam .qestion p {
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.pass-exam .qestions {
+  gap: 30px;
+}
+.pass-exam .qestion p::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 50%;
+  left: -30px;
+  background-color: var(--Light);
+  border: solid 1px var(--Dark);
+  position: absolute;
+  transform: translate(0px, -50%);
+}
+.pass-exam .f-c button {
+  margin: 2rem 0;
+}
+.timer {
+  padding: 20px 30px;
+  border-radius: 15px;
+  position: fixed;
+  top: 2.7rem;
+  left: 60%;
+  transform: translate(-50%, 0);
+  display: flex;
+  align-items: center;
+  z-index: 20;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0 0 10px 1px var(--Prcl);
+  font-size: 1.5rem;
+  background-color: var(--Light);
+  transition: 0.5s;
+  font-variant-numeric: ordinal;
+}
+.timer i {
+  font-size: 2.4rem;
+}

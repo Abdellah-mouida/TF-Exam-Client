@@ -1,0 +1,121 @@
+.exam-preview {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.exam {
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px 0.5px var(--TR-Black);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.exam header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.exam-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+}
+.exam-date {
+  color: var(--TR-Black);
+  transition: 0.5s;
+  font-size: 0.9rem;
+}
+.exam-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 1.1rem;
+}
+.diff-state {
+  width: 20px;
+  border-radius: 50%;
+  padding: 10px;
+  height: 20px;
+  background-color: #00ffa1;
+}
+.exam-info div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.exam-info .fa-star {
+  color: #fff00b;
+  font-size: 1.2rem;
+}
+.exam-info span {
+  font-weight: 600;
+  padding-right: 10px;
+}
+.start-exam {
+  border-radius: 50%;
+  background-color: var(--Dark);
+  height: 0px;
+  position: absolute;
+  width: 0px;
+  transition: 0.5s;
+  right: 0%;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.exam button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--Prcl);
+  color: var(--Btn);
+  border-radius: 30px;
+  transition: 0.5s;
+  z-index: 4;
+  width: 30%;
+
+  position: absolute;
+  top: 50%;
+  transform: translate(-0, -50%);
+  right: -100%;
+}
+.exam:hover .start-exam {
+  width: 500px;
+  height: 500px;
+  top: -50%;
+  right: -20%;
+}
+.exam:hover button {
+  right: 20%;
+}
+.exam button i {
+  transition: 0.5s;
+}
+.exam button:hover i {
+  transform: translateX(10px);
+}
+.exam:hover .exam-date {
+  z-index: 6;
+  color: var(--White);
+}
+.creator {
+  color: var(--Prcl);
+  font-weight: 600;
+  padding: 5px;
+}

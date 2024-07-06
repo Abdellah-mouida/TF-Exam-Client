@@ -1,0 +1,24 @@
+.home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+
+  background-color: var(--Light);
+}
+.oulet-container {
+  flex: 1;
+  margin: 1rem;
+  border-radius: 25px;
+  background-color: var(--White);
+  padding: 1rem;
+}
+.scroll-handeler {
+  overflow: auto;
+  height: calc(100vh - 4rem);
+  padding: 1rem 0;
+  position: relative;
+}
+.scroll-handeler::-webkit-scrollbar {
+  display: none;
+}

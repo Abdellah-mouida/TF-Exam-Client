@@ -1,0 +1,41 @@
+.users table {
+  table-layout: auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+.users table th,
+.users table td {
+  border: solid 1px #111;
+  padding: 10px;
+}
+.users table th {
+  background-color: #111;
+  color: var(--Prcl);
+}
+.users table td:not(:nth-child(1)) {
+  text-align: center;
+}
+.users table tr td:last-child {
+  font-size: 20px;
+}
+.users .g-title {
+  font-weight: 600;
+}
+.users table button {
+  outline: none;
+  font-size: 1.5rem;
+  padding: 2px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.users table .fa-trash {
+  color: #ff2102;
+}
+
+.update-user .form-controle {
+  padding: 1rem 0;
+}
+.form-controle select option {
+  background-color: var(--Light);
+}

@@ -1,0 +1,29 @@
+.history .answers table {
+  table-layout: auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+.history .answers table th,
+.history .answers table td {
+  border: solid 1px #111;
+  padding: 10px;
+}
+.history .answers table th,
+.history .answers table tr:last-child {
+  background-color: #111;
+  color: var(--Prcl);
+}
+.history .answers table td:not(:nth-child(1)) {
+  text-align: center;
+}
+.history .answers table tr td:last-child {
+  font-size: 20px;
+}
+.history-false-answer {
+  background-color: #ff000028;
+  color: #ff2020;
+}
+.history-true-answer {
+  background-color: #00ff0038;
+  color: #00bb00;
+}
